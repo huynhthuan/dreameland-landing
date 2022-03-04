@@ -103,7 +103,7 @@ main {
 .banner-content {
     position: absolute;
     left: 50%;
-    top: 68%;
+    top: 64%;
     transform: translateX(-50%);
     width: 100%;
 }
@@ -240,6 +240,10 @@ main {
     display: none;
 }
 
+.features-item:hover {
+    cursor: pointer;
+}
+
 .feature-img {
     max-width: 176px;
     height: 199px;
@@ -280,7 +284,7 @@ main {
 .features-pagination .swiper-pagination-bullet {
     width: 12px;
     height: 12px;
-    background-color: #ebe6d5;
+    background-color: #837b60;
 }
 
 .features-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
@@ -696,6 +700,10 @@ main {
     margin-bottom: 18px;
 }
 
+.team-ava img {
+    width: 100%;
+}
+
 .team-name {
     font-family: 'Bai Jamjuree';
     font-style: normal;
@@ -804,4 +812,444 @@ footer {
     position: absolute;
     bottom: 0;
     right: 0;
+}
+
+@media (max-width: 1440px) {
+    .features-slide .swiper-slide {
+        left: -15%;
+    }
+}
+
+@media (max-width: 1368px) {
+    .block-about .block-desc {
+        line-height: 19px;
+        padding-right: 0;
+    }
+
+    .block-gameplay .block-desc {
+        line-height: 18px;
+    }
+
+    .image-decor {
+        z-index: 2;
+    }
+
+    .token-economy-img img {
+        width: 100%;
+    }
+
+    .roadmap-line img {
+        width: 100%;
+    }
+
+    .roadmap-item-6 .roadmap-img {
+        bottom: -11px;
+    }
+
+    .roadmap-desc-list li {
+        font-size: 14px;
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .menu {
+        padding: 0 70px;
+    }
+
+    .mechanims-img {
+        width: 320px;
+    }
+
+    .mechanims-img img {
+        width: 100%;
+    }
+
+    .features-slide .swiper-slide {
+        left: -19%;
+    }
+
+    .block-economy {
+        top: -200px;
+        padding-top: 170px;
+    }
+
+    .block-roadmap {
+        top: -200px;
+    }
+
+    .footer-decor {
+        width: 240px;
+    }
+
+    .footer-decor img {
+        width: 100%;
+    }
+
+    .partner-decor {
+        width: 200px;
+    }
+
+    .partner-decor img {
+        width: 100%;
+    }
+
+    .image-decor-1 {
+        width: 180px;
+    }
+
+    .image-decor-1 img {
+        width: 100%;
+    }
+
+    .image-decor-2 {
+        width: 100px;
+    }
+
+    .image-decor-2 img {
+        width: 100%;
+    }
+}
+
+@media (max-width: 1024px) {
+    .menu {
+        padding: 0;
+    }
+
+    .block-mechanism {
+        top: -50px;
+        padding-top: 130px;
+    }
+
+    .mechanims-item-larger {
+        padding: 40px 28px 55px;
+    }
+
+    .features-slide .swiper-slide.swiper-slide-active {
+        width: 400px !important;
+    }
+
+    .features-slide .swiper-slide {
+        left: -10%;
+    }
+
+    .features-slide .swiper-slide.swiper-slide-active .features-item {
+        padding: 47px 30px 67px 30px;
+    }
+
+    .features-slide .swiper-slide.swiper-slide-active .feature-img {
+        max-width: 180px;
+        right: -16px;
+    }
+
+    .block-feature .block-title {
+        margin-bottom: 20px;
+    }
+
+    .block-gameplay .block-title {
+        padding-left: 0;
+    }
+
+    .block-economy {
+        top: -130px;
+        padding-top: 90px;
+    }
+
+    .block-roadmap {
+        top: -130px;
+    }
+
+    .block-team {
+        top: -555px;
+    }
+
+    .block-gameplay {
+        padding-top: 50px;
+    }
+
+    .token-economy-item {
+        padding: 20px 29px;
+    }
+}
+
+@media (max-width: 768px) {
+    .main-menu-wrap {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        z-index: 999;
+        width: 50%;
+        background-color: #e78901;
+        height: 100%;
+        transition: all 0.5s ease-in-out;
+    }
+
+    .main-menu-wrap.active {
+        right: 0%;
+        transition: all 0.5s ease-in-out;
+    }
+
+    .menu ul {
+        flex-direction: column;
+        padding: 40px;
+        height: 100%;
+    }
+
+    .btn-close-menu {
+        position: absolute;
+        z-index: 99999;
+        width: 50px;
+        height: 50px;
+        border-radius: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        left: -25px;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    .menu {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 11px 40px 40px;
+    }
+
+    .block {
+        top: 0;
+    }
+
+    .about-img {
+        max-width: 100%;
+    }
+
+    .block-about {
+        padding-bottom: 40px;
+        padding-top: 0;
+    }
+
+    .block-mechanism {
+        padding: 40px 0;
+    }
+
+    .mechanims-item {
+        background-color: #016eab;
+        max-width: 100%;
+        margin-bottom: 24px;
+        clip-path: polygon(0% 0%, 96% 0%, 100% 14%, 100% 100%, 0% 100%);
+    }
+
+    .mechanims-img {
+        width: 240px;
+    }
+
+    .features-pagination {
+        padding-bottom: 40px;
+    }
+
+    .block-gameplay .block-desc {
+        padding-left: 0;
+    }
+
+    .gameplay-video {
+        max-width: 600px;
+        height: 400px;
+    }
+
+    .gameplay-video {
+        bottom: -8%;
+    }
+
+    .block-gameplay {
+        min-height: 610px;
+    }
+
+    .player-btn {
+        width: 90px;
+        height: 90px;
+    }
+
+    .player-btn img {
+        width: 40%;
+        left: 0;
+    }
+
+    .image-decor-1 {
+        width: 100px;
+        top: 40px;
+    }
+
+    .block-nft-item {
+        padding: 100px 0 80px;
+    }
+
+    .token-economy-img {
+        max-width: 400px;
+        margin: 0 auto;
+    }
+
+    .token-economy-desc {
+        margin-bottom: 24px;
+    }
+
+    .token-economy-item {
+        clip-path: polygon(0% 0%, 94% 0%, 100% 14%, 100% 100%, 0% 100%);
+    }
+
+    .block-roadmap .block-title {
+        margin-bottom: 20px;
+    }
+
+    .roadmap-list {
+        flex-direction: column;
+    }
+
+    .roadmap-item {
+        max-width: 100%;
+        flex-direction: row;
+        min-height: unset;
+        margin-right: 0;
+        margin-bottom: 30px;
+    }
+
+    .roadmap-desc {
+        display: flex;
+        align-content: center;
+    }
+
+    .roadmap-title {
+        line-height: normal;
+        margin: 0;
+        display: flex;
+        align-items: center;
+        margin-right: 20px;
+    }
+
+    .roadmap-img {
+        min-height: unset;
+        min-width: 200px;
+        align-items: center;
+        justify-content: center;
+        margin-right: 20px;
+        margin-bottom: 0;
+    }
+
+    .roadmap-item .roadmap-img {
+        bottom: 0;
+    }
+
+    .roadmap-line {
+        display: none;
+    }
+
+    .roadmap-list {
+        padding-bottom: 40px;
+    }
+
+    .team-button-next {
+        right: -25px;
+    }
+
+    .team-button-prev {
+        left: -25px;
+    }
+
+    .block-team {
+        padding-top: 80px;
+    }
+
+    .block-partner {
+        margin-bottom: 0;
+    }
+
+    footer {
+        padding-top: 108px;
+        padding-bottom: 81px;
+    }
+
+    .slide-team-wrap {
+        padding: 0;
+    }
+
+    .team-btn {
+        width: 50px;
+        height: 50px;
+    }
+}
+
+@media (max-width: 576px) {
+    .btn-download-group {
+        justify-content: space-between;
+    }
+
+    .btn-download-group .btn-download {
+        width: calc(100% / 3 - 8px);
+        margin: 0;
+    }
+
+    .btn-download-group .btn-download img {
+        width: 100%;
+    }
+
+    .features-slide .swiper-slide {
+        left: 0;
+    }
+
+    .features-slide .swiper-slide.swiper-slide-active {
+        width: 100% !important;
+    }
+
+    .gameplay-video {
+        bottom: -12%;
+    }
+
+    .block-nft-item {
+        padding: 150px 0 80px;
+    }
+
+    .roadmap-desc-list {
+        flex: 1;
+    }
+
+    .roadmap-img {
+        max-width: 140px;
+        min-width: unset;
+        width: 100%;
+    }
+
+    .roadmap-item-6 .roadmap-img img {
+        width: 100%;
+    }
+
+    .team-btn {
+        width: 30px;
+        height: 30px;
+    }
+
+    .team-button-next {
+        right: -10px;
+    }
+
+    .team-button-prev {
+        left: -10px;
+    }
+
+    .parner-item {
+        width: 50%;
+        margin-bottom: 24px;
+    }
+
+    .row-partner {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .main-menu-wrap.active {
+        width: 80%;
+    }
+
+    footer {
+        padding-top: 0;
+    }
 }
