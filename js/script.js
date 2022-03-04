@@ -7,6 +7,7 @@ const swiper = new Swiper('.features-slide', {
     centeredSlidesBounds: true,
     // If we need pagination
     pagination: {
+        clickable: true,
         el: '.features-pagination',
     },
 });
@@ -21,4 +22,8 @@ const swiper2 = new Swiper('.slide-team-inner', {
         nextEl: '.team-button-next',
         prevEl: '.team-button-prev',
     },
+});
+
+AOS.init({
+    duration: 1000,
 });

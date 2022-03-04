@@ -36,6 +36,14 @@ header {
     right: 0;
 }
 
+main {
+    overflow: hidden;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
 .block-desc {
     font-family: 'Bai Jamjuree', sans-serif;
     font-style: normal;
@@ -80,6 +88,11 @@ header {
 
 .block-banner {
     position: relative;
+    min-height: 800px;
+    background-image: url(../img/banner-bg.png);
+    background-size: 100% 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
 }
 
 .banner-img {
@@ -112,6 +125,12 @@ header {
     width: 100%;
 }
 
+.block-about {
+    padding-top: 71px;
+    position: relative;
+    z-index: 2;
+}
+
 .block-about .block-title {
     margin-bottom: 16px;
     padding-left: 31px;
@@ -127,6 +146,10 @@ header {
     padding-top: 192px;
     position: relative;
     padding-bottom: 120px;
+    background-color: #005d92;
+    top: -104px;
+    z-index: 1;
+    position: relative;
 }
 
 .block-mechanism .block-title {
@@ -180,6 +203,13 @@ header {
     position: absolute;
     bottom: -115px;
     right: 0;
+}
+
+.block-feature {
+    background-color: #fffcf0;
+    top: -104px;
+    position: relative;
+    padding-top: 100px;
 }
 
 .block-feature .block-title {
@@ -308,7 +338,9 @@ header {
 .block-gameplay {
     padding-top: 80px;
     position: relative;
-    margin-bottom: 103px;
+    background-color: #da773b;
+    top: -104px;
+    min-height: 670px;
 }
 
 .block-gameplay .block-title,
@@ -327,12 +359,17 @@ header {
 }
 
 .gameplay-video {
-    margin-top: 40px;
+    max-width: calc(1200px - 24px);
+    width: 100%;
     height: 780px;
     padding: 60px;
     background: linear-gradient(180deg, #fcf6df 0%, #fffcf0 100%);
-    filter: drop-shadow(4px 4px 30px rgba(68, 35, 5, 0.08));
-    position: relative;
+    box-shadow: 4px 4px 30px rgba(68, 35, 5, 0.08);
+    position: absolute;
+    bottom: -50%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
 }
 
 .block-gameplay .block-title {
@@ -378,6 +415,13 @@ header {
     left: 0;
 }
 
+.block-nft-item {
+    position: relative;
+    top: -104px;
+    padding-top: 433px;
+    background-color: #fffcf0;
+}
+
 .block-nft-item .block-title {
     margin-bottom: 20px;
 }
@@ -393,6 +437,8 @@ header {
 
 .nft-item-img {
     max-width: 769px;
+    z-index: 3;
+    position: relative;
 }
 
 .nft-item-img img {
@@ -424,6 +470,10 @@ header {
 .block-economy {
     padding-top: 227px;
     padding-bottom: 90px;
+    position: relative;
+    top: -278px;
+    background-color: #005d92;
+    z-index: 1;
 }
 
 .block-economy .block-title {
@@ -491,6 +541,17 @@ header {
     line-height: 24px;
     letter-spacing: 0.02em;
     color: #fcf6df;
+}
+
+.block-roadmap {
+    padding-top: 80px;
+    top: -278px;
+    position: relative;
+    background-image: url(../img/roadmap-bg.png);
+    background-size: 100% 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    z-index: 2;
 }
 
 .block-roadmap .block-title {
@@ -584,6 +645,14 @@ header {
     bottom: -18px;
 }
 
+.block-team {
+    padding-bottom: 120px;
+    position: relative;
+    top: -634px;
+    background: linear-gradient(180deg, #fffcf0 0%, #fffcf0 47.47%, rgba(255, 254, 248, 0) 100%);
+    padding-top: 356px;
+}
+
 .block-team .block-title {
     margin-bottom: 48px;
 }
@@ -658,4 +727,81 @@ header {
 
 .slide-team-inner {
     padding-bottom: 30px;
+}
+
+.block-partner {
+    padding-top: 100px;
+    position: relative;
+    top: -634px;
+    background-color: #005d92;
+    margin-bottom: -634px;
+}
+
+.block-partner .block-title {
+    margin-bottom: 73px;
+}
+
+.row-partner {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 38px;
+}
+
+.parner-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.partner-decor {
+    position: absolute;
+    left: 0;
+    top: -115px;
+}
+
+footer {
+    padding-top: 148px;
+    background-color: #005d92;
+    position: relative;
+    padding-bottom: 36px;
+    /* top: -634px; */
+}
+
+.lis-social {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 16px;
+}
+
+.lis-social li {
+    margin: 0 6px;
+}
+
+.lis-social li a {
+    display: block;
+    transform: translateY(0px);
+    transition: all 0.5s ease-in-out;
+}
+
+.lis-social li a:hover {
+    transform: translateY(-10px);
+    transition: all 0.5s ease-in-out;
+}
+
+.coppy-right {
+    font-family: 'Bai Jamjuree';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 24px;
+    color: #ffffff;
+    opacity: 0.6;
+    text-align: center;
+}
+
+.footer-decor {
+    position: absolute;
+    bottom: 0;
+    right: 0;
 }
