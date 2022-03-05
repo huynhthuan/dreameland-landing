@@ -1,0 +1,12 @@
+@font-face {
+    font-family: 'Cowboys 2.0';
+    src: url('Cowboys20.eot');
+    src: url('Cowboys20.eot?#iefix') format('embedded-opentype'),
+        url('Cowboys20.woff2') format('woff2'),
+        url('Cowboys20.woff') format('woff'),
+        url('Cowboys20.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
