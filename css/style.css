@@ -135,6 +135,7 @@ main {
     top: 64%;
     transform: translateX(-50%);
     width: 100%;
+    z-index: 2;
 }
 
 .btn-download-group {
@@ -1176,6 +1177,91 @@ footer {
     color: white;
 }
 
+.cloud {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.cloud1 {
+    left: 73px;
+    top: 219px;
+}
+
+.cloud2 {
+    left: 294px;
+    top: 294px;
+}
+
+.cloud3 {
+    left: 778px;
+    top: 109px;
+}
+
+.cloud4 {
+    left: 1004px;
+    top: 187px;
+}
+
+.cloud5 {
+    left: 317px;
+    top: 428px;
+}
+
+.cloud6 {
+    left: 1231px;
+    top: 306px;
+}
+
+.cloud7 {
+    left: -244px;
+    top: 437px;
+}
+
+.cloud8 {
+    left: 223px;
+    top: 591px;
+}
+
+.cloud9 {
+    left: 49px;
+    top: 538px;
+}
+
+.cloud10 {
+    left: 801px;
+    top: 577px;
+}
+
+.cloud11 {
+    left: 923px;
+    top: 577px;
+}
+
+.cloud-group {
+    max-width: 1440px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+}
+
+.layer {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+#scene {
+    width: 100%;
+    height: 100%;
+}
+
 @media (max-width: 1440px) {
     .mechanims-img2 {
         left: 133px;
@@ -1295,8 +1381,11 @@ footer {
     .features-slide .swiper-slide.swiper-slide-duplicate-prev {
         max-width: 614px !important;
     }
-}
 
+    .cloud5 {
+        left: 200px;
+    }
+}
 
 @media (max-width: 1024px) {
     .menu {
@@ -1400,6 +1489,18 @@ footer {
     .features-item {
         padding: 0 20px 40px;
         clip-path: polygon(-50% -50%, 100% 0%, 100% 100%, 12% 100%, 0% 90%);
+    }
+
+    .cloud5 {
+        left: 100px;
+    }
+
+    .cloud3 {
+        left: 700px;
+    }
+
+    .cloud4 {
+        left: 900px;
     }
 }
 
@@ -1690,6 +1791,34 @@ footer {
     .block::before {
         background-size: cover;
     }
+
+    .cloud2 {
+        left: 218px;
+        top: 294px;
+    }
+
+    .cloud1 {
+        left: -43px;
+        top: 219px;
+    }
+
+    .cloud3 {
+        left: 597px;
+    }
+
+    .cloud4 {
+        left: 698px;
+    }
+
+    .cloud7 {
+        left: -331px;
+        top: 437px;
+    }
+
+    .cloud9,
+    .cloud5 {
+        display: none;
+    }
 }
 
 @media (max-width: 576px) {
@@ -1865,5 +1994,24 @@ footer {
 
     .block-partner .block-title {
         margin-bottom: 40px;
+    }
+
+    .cloud2 {
+        left: 293px;
+        top: 294px;
+    }
+
+    .cloud1 {
+        left: -126px;
+        top: 219px;
+    }
+
+    .cloud7 {
+        display: none;
+    }
+
+    .banner-img img {
+        position: relative;
+        right: -10px;
     }
 }
