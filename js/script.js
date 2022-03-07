@@ -120,7 +120,7 @@ $('.player-btn').click(() => {
     }
 });
 
-let scene = document.getElementById('scene');
-let parallaxInstance = new Parallax(scene, {
-    relativeInput: true,
-});
+// let scene = document.getElementById('scene');
+// let parallaxInstance = new Parallax(scene, {
+//     relativeInput: true,
+// });
