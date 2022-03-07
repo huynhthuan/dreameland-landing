@@ -124,3 +124,16 @@ $('.player-btn').click(() => {
 // let parallaxInstance = new Parallax(scene, {
 //     relativeInput: true,
 // });
+
+$(window).scroll(() => {
+    console.log();
+    if ($(window).scrollTop() >= 800) {
+        $('.layer').each((index, value) => {
+            $(value).removeClass('aos-init aos-animate');
+        });
+    } else {
+        $('.layer').each((index, value) => {
+            $(value).addClass('aos-init aos-animate');
+        });
+    }
+});
