@@ -2101,4 +2101,8 @@ footer {
     .footer-decor {
         width: 180px;
     }
+
+    .block-location .block-title{
+        margin-bottom: 0;
+    }
 }
