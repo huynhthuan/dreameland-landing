@@ -125,15 +125,11 @@ $('.player-btn').click(() => {
 //     relativeInput: true,
 // });
 
-$(window).scroll(() => {
-    console.log();
-    if ($(window).scrollTop() >= 800) {
-        $('.layer').each((index, value) => {
-            $(value).removeClass('aos-init aos-animate');
-        });
-    } else {
-        $('.layer').each((index, value) => {
-            $(value).addClass('aos-init aos-animate');
-        });
-    }
-});
+// $(window).scroll(() => {
+//     console.log($(window).scrollTop());
+//     if ($(window).scrollTop() >= 800) {
+//         $('.layer').each((index, value) => {
+//             $(value).removeData('data-aos');
+//         });
+//     }
+// });
