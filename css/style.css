@@ -132,7 +132,7 @@ main {
 .banner-content {
     position: absolute;
     left: 50%;
-    top: 64%;
+    top: 68%;
     transform: translateX(-50%);
     width: 100%;
     z-index: 2;
@@ -323,7 +323,7 @@ main {
         text-align: center;
         position: relative;
         height: 284px;
-        padding-top: 152px;
+        padding-top: 170px;
         width: 100%;
         margin: 0 auto;
         clip-path: polygon(-50% -50%, 100% 0%, 100% 100%, 12% 100%, 0% 90%);
@@ -585,14 +585,14 @@ main {
 }
 
 .image-decor-1 {
-    top: 80px;
-    right: 0;
+    top: -32%;
+    right: -21%;
     z-index: 3;
 }
 
 .image-decor-2 {
-    top: 70%;
-    left: 0;
+    top: 50%;
+    left: -20%;
 }
 
 .block-nft-item {
@@ -1214,7 +1214,7 @@ footer {
 }
 
 .cloud7 {
-    left: -244px;
+    left: -366px;
     top: 437px;
 }
 
@@ -1225,7 +1225,7 @@ footer {
 
 .cloud9 {
     left: 49px;
-    top: 538px;
+    top: 627px;
 }
 
 .cloud10 {
