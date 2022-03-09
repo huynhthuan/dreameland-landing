@@ -169,9 +169,16 @@ main {
 }
 
 .block-about .block-title {
-    margin-bottom: 16px;
+    margin-bottom: 20px;
     padding-left: 31px;
-    padding-right: 31px;
+}
+
+.block-about .block-title * {
+    text-align: left;
+}
+
+.block-about .block-title .text-custom {
+    min-height: 104px;
 }
 
 .block-about .block-desc {
@@ -189,6 +196,14 @@ main {
     position: relative;
 }
 
+.block-mechanism .block-title {
+    padding-left: 56px;
+}
+
+.block-mechanism .block-title * {
+    text-align: left;
+}
+
 .block-mechanism::before {
     content: '';
     width: 100%;
@@ -201,12 +216,6 @@ main {
     left: 0;
     z-index: 2;
     height: 92px;
-}
-
-.block-mechanism .block-title {
-    margin-bottom: 24px;
-    padding-top: 45px;
-    padding-left: 56px;
 }
 
 .mechanims-item-title {
@@ -292,7 +301,7 @@ main {
 }
 
 .block-feature .block-title {
-    margin-bottom: 73px;
+    margin-bottom: 80px;
 }
 
 .features-wrap {
@@ -307,14 +316,16 @@ main {
 
 @media (min-width: 1025px) {
     .features-slide .swiper-slide {
-        transition: all 0.5s ease-in-out;
-        max-width: 264px !important;
-        width: 100% !important;
-        right: -30%;
+        transition: all 0.1s ease-in-out;
     }
 
-    .features-slide .swiper-slide.swiper-slide-duplicate.swiper-slide-duplicate-prev,
-    .features-slide .swiper-slide.swiper-slide-duplicate-prev {
+    .swiper-slide-active.active,
+    .swiper-slide-next.active {
+        width: 264px !important;
+        transition: all 0.1s ease-in-out;
+    }
+
+    .features-slide .swiper-slide.swiper-slide-next + .swiper-slide {
         max-width: 624px !important;
         width: 100% !important;
     }
@@ -327,22 +338,20 @@ main {
         width: 100%;
         margin: 0 auto;
         clip-path: polygon(-50% -50%, 100% 0%, 100% 100%, 12% 100%, 0% 90%);
-        transition: all 0.5s ease-in-out;
+        transition: all 0.1s ease-in-out;
     }
 
-    .features-slide .swiper-slide.swiper-slide-duplicate.swiper-slide-duplicate-prev .features-item,
-    .features-slide .swiper-slide.swiper-slide-duplicate-prev .features-item {
-        clip-path: polygon(-50% -50%, 100% 0%, 100% 100%, 5% 100%, 0% 89%);
-        transition: all 0.5s ease-in-out;
+    .features-slide .swiper-slide.swiper-slide-next + .swiper-slide .features-item {
+        clip-path: polygon(-50% -50%, 100% 0%, 100% 100%, 5% 100%, 0% 90%);
+        transition: all 0.1s ease-in-out;
     }
 
-    .features-slide .swiper-slide.swiper-slide-duplicate.swiper-slide-duplicate-prev .features-item .features-desc,
-    .features-slide .swiper-slide.swiper-slide-duplicate-prev .features-item .features-desc {
+    .features-slide .swiper-slide.swiper-slide-next + .swiper-slide .features-desc {
         display: block;
+        transition: all 0.1s ease-in-out;
     }
 
-    .features-slide .swiper-slide.swiper-slide-duplicate.swiper-slide-duplicate-prev .features-item .feature-img,
-    .features-slide .swiper-slide.swiper-slide-duplicate-prev .features-item .feature-img {
+    .features-slide .swiper-slide.swiper-slide-next + .swiper-slide .feature-img {
         top: -40px;
         left: unset;
         right: 41px;
@@ -352,20 +361,21 @@ main {
         height: 100%;
         object-fit: contain;
         transform: translateX(0);
+        transition: all 0.1s ease-in-out;
     }
 
-    .features-slide .swiper-slide.swiper-slide-duplicate.swiper-slide-duplicate-prev .features-item,
-    .features-slide .swiper-slide.swiper-slide-duplicate-prev .features-item {
+    .features-slide .swiper-slide.swiper-slide-next + .swiper-slide .features-item {
         padding-top: 0;
         display: flex;
         padding: 52px 41px 0;
+        transition: all 0.1s ease-in-out;
     }
 
-    .features-slide .swiper-slide.swiper-slide-duplicate.swiper-slide-duplicate-prev .features-item .features-meta,
-    .features-slide .swiper-slide.swiper-slide-duplicate-prev .features-item .features-meta {
+    .features-slide .swiper-slide.swiper-slide-next + .swiper-slide .features-meta {
         text-align: left;
-        max-width: 192px;
+        max-width: 228px;
         flex: 1;
+        transition: all 0.1s ease-in-out;
     }
 }
 
@@ -397,8 +407,19 @@ main {
     background: linear-gradient(180deg, #66ae6c 0%, #426c45 100%);
 }
 
-.swiper-slide.swiper-slide-duplicate.swiper-slide-duplicate-prev.features-1 .features-item,
-.swiper-slide.swiper-slide-duplicate-prev.features-1 .features-item {
+.features-4 .features-item {
+    background: linear-gradient(180deg, #e48950 0%, #a95827 100%);
+}
+
+.features-5 .features-item {
+    background: linear-gradient(180deg, #66ae6c 0%, #426c45 100%);
+}
+
+.features-6 .features-item {
+    background: linear-gradient(180deg, #b47645 15.49%, #845530 100%);
+}
+
+.features-slide .swiper-slide.swiper-slide-next + .swiper-slide.features-1 .features-item {
     background: url(../img/bg-features-item.png), linear-gradient(180deg, #e48950 0%, #a95827 100%);
     background-repeat: no-repeat;
     background-position: bottom center;
@@ -406,8 +427,7 @@ main {
     background-blend-mode: luminosity;
 }
 
-.swiper-slide.swiper-slide-duplicate.swiper-slide-duplicate-prev.features-2 .features-item,
-.swiper-slide.swiper-slide-duplicate-prev.features-2 .features-item {
+.features-slide .swiper-slide.swiper-slide-next + .swiper-slide.features-2 .features-item {
     background: url(../img/bg-features-item.png), linear-gradient(180deg, #b47645 15.49%, #845530 100%);
     background-repeat: no-repeat;
     background-position: bottom center;
@@ -415,9 +435,32 @@ main {
     background-blend-mode: luminosity;
 }
 
-.swiper-slide.swiper-slide-duplicate.swiper-slide-duplicate-prev.features-3 .features-item,
-.swiper-slide.swiper-slide-duplicate-prev.features-3 .features-item {
+.features-slide .swiper-slide.swiper-slide-next + .swiper-slide.features-3 .features-item {
     background: url(../img/bg-features-item.png), linear-gradient(180deg, #66ae6c 0%, #426c45 100%);
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    background-size: 100% auto;
+    background-blend-mode: luminosity;
+}
+
+.features-slide .swiper-slide.swiper-slide-next + .swiper-slide.features-4 .features-item {
+    background: url(../img/bg-features-item.png), linear-gradient(180deg, #e48950 0%, #a95827 100%);
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    background-size: 100% auto;
+    background-blend-mode: luminosity;
+}
+
+.features-slide .swiper-slide.swiper-slide-next + .swiper-slide.features-5 .features-item {
+    background: url(../img/bg-features-item.png), linear-gradient(180deg, #66ae6c 0%, #426c45 100%);
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    background-size: 100% auto;
+    background-blend-mode: luminosity;
+}
+
+.features-slide .swiper-slide.swiper-slide-next + .swiper-slide.features-6 .features-item {
+    background: url(../img/bg-features-item.png), linear-gradient(180deg, #b47645 15.49%, #845530 100%);
     background-repeat: no-repeat;
     background-position: bottom center;
     background-size: 100% auto;
@@ -487,6 +530,22 @@ main {
     min-height: 670px;
 }
 
+.block-gameplay .block-title {
+    width: 100%;
+}
+
+.block-gameplay .block-title .text-middle {
+    background: linear-gradient(180deg, #7ec04a 0%, #6e9530 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.block-gameplay .block-title .text-back {
+    background: linear-gradient(180deg, #7ec04a 0%, #6e9530 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
 .block-gameplay::before {
     content: '';
     width: 100%;
@@ -501,7 +560,6 @@ main {
     height: 92px;
 }
 
-.block-gameplay .block-title,
 .block-gameplay .block-desc {
     padding-left: 60px;
 }
@@ -528,10 +586,6 @@ main {
     left: 50%;
     transform: translateX(-50%);
     z-index: 2;
-}
-
-.block-gameplay .block-title {
-    padding-top: 30px;
 }
 
 .gameplay-player {
@@ -601,8 +655,46 @@ main {
     background-color: #fffcf0;
 }
 
+.block-nft-item .block-title * {
+    text-align: left;
+}
+
 .block-nft-item .block-title {
-    margin-bottom: 20px;
+    margin-bottom: 23px;
+}
+
+.nft-img {
+    width: 100%;
+}
+
+.nft-img img {
+    width: 100%;
+}
+
+.nft-item-swiper .swiper-cube .swiper-cube-shadow:before {
+    display: none;
+}
+
+.nft-item-swiper .swiper-3d .swiper-slide-shadow-left,
+.nft-item-swiper .swiper-3d .swiper-slide-shadow-right {
+    display: none;
+}
+
+.nft-item:hover {
+    cursor: pointer;
+}
+
+.nft-item:hover .nft-icon,
+.nft-item.active .nft-icon {
+    background: linear-gradient(180deg, #f3a83f 0%, #d18d5f 100%);
+}
+
+.nft-item:hover .nft-item-desc,
+.nft-item.active .nft-item-desc {
+    font-weight: bold;
+    background: linear-gradient(180deg, #f3a83f 0%, #d18d5f 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .nft-item-wrap {
@@ -639,6 +731,17 @@ main {
 
 .nft-icon {
     margin-right: 15px;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #495260;
+    border-radius: 100%;
+}
+
+.nft-icon img {
+    object-fit: contain;
 }
 
 .nft-item-desc {
@@ -672,6 +775,10 @@ main {
     height: 92px;
 }
 
+.block-economy .block-title {
+    margin-bottom: 84px;
+}
+
 .token-economy-wrap {
     display: flex;
     align-items: center;
@@ -679,10 +786,6 @@ main {
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
-}
-
-.block-economy .block-title {
-    margin-bottom: 30px;
 }
 
 .token-economy-desc {
@@ -773,10 +876,6 @@ main {
     background-repeat: no-repeat;
     z-index: 2;
     min-height: 778px;
-}
-
-.block-roadmap .block-title {
-    margin-bottom: 50px;
 }
 
 .roadmap {
@@ -870,11 +969,11 @@ main {
 .block-team {
     padding-bottom: 120px;
     position: relative;
-    background: #f7f4ea;
+    background: #FFFCF0;
     padding-top: 80px;
 }
 
-.block-team .block-title {
+.block-team .block-title{
     margin-bottom: 48px;
 }
 
@@ -968,6 +1067,10 @@ main {
     background-color: #99643a;
 }
 
+.block-partner .block-title{
+    margin-bottom: 73px;
+}
+
 .block-partner::before {
     content: '';
     width: 100%;
@@ -980,10 +1083,6 @@ main {
     left: 0;
     z-index: 1;
     height: 92px;
-}
-
-.block-partner .block-title {
-    margin-bottom: 73px;
 }
 
 .row-partner {
@@ -1006,7 +1105,7 @@ main {
 }
 
 footer {
-    padding-top: 148px;
+    padding-top: 110px;
     background-color: #99643a;
     position: relative;
     padding-bottom: 36px;
@@ -1059,8 +1158,7 @@ footer {
 }
 
 .block-vision .block-title {
-    text-align: center;
-    margin-bottom: 41px;
+    margin-bottom: 40px;
 }
 
 .block-vision .block-content {
@@ -1145,12 +1243,6 @@ footer {
 
 .block-location {
     padding-top: 60px;
-}
-
-.block-location .block-title {
-    margin-bottom: 23px;
-    position: relative;
-    top: -25px;
 }
 
 .location-content {
@@ -1289,11 +1381,66 @@ footer {
     position: relative;
 }
 
+.block-location .block-title {
+    margin-bottom: 29px;
+}
+
+.block-location .block-title .text-custom {
+    top: -14px;
+}
+
 .decor-allocation {
     position: absolute;
     top: -180px;
     left: 0;
     z-index: 2;
+}
+
+.text-custom {
+    font-family: 'Cowboys 2.0';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 48px;
+    line-height: 48px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: #fffcf0;
+    position: relative;
+    min-height: 50px;
+    width: 100%;
+}
+
+.text-custom * {
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    text-align: center;
+}
+
+.text-main {
+    z-index: 3;
+    position: absolute;
+    top: 0;
+}
+
+.text-middle {
+    background: linear-gradient(180deg, #f3a83f 0%, #d18d5f 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    position: absolute;
+    top: -2px;
+    left: calc(50% - 1.5px);
+    z-index: 2;
+}
+
+.text-back {
+    background: linear-gradient(180deg, #d89258 0%, #9d6b92 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    position: absolute;
+    top: 2.5px;
+    left: calc(50% + 3.5px);
+    z-index: 1;
 }
 
 @media (max-width: 1440px) {
@@ -1434,10 +1581,6 @@ footer {
 }
 
 @media (max-width: 1024px) {
-    .block-tokenomics .block-title img {
-        width: 38%;
-    }
-
     .menu {
         padding: 0;
     }
@@ -1449,14 +1592,6 @@ footer {
 
     .mechanims-item-larger {
         padding: 40px 28px 55px;
-    }
-
-    .block-feature .block-title {
-        margin-bottom: 20px;
-    }
-
-    .block-gameplay .block-title {
-        padding-left: 0;
     }
 
     .block-economy {
@@ -1471,41 +1606,12 @@ footer {
         padding: 20px 29px;
     }
 
-    .block-title img {
-        width: 100%;
-    }
-
     .mechanims-img2 {
         width: 100px;
     }
 
     .mechanims-img2 img {
         width: 100%;
-    }
-
-    .block-mechanism .block-title {
-        padding-left: 40px;
-    }
-
-    .block-feature .block-title img,
-    .block-vision .block-title img,
-    .block-feature .block-title img,
-    .block-economy .block-title img,
-    .block-location .block-title img {
-        width: 47%;
-    }
-
-    .block-partner .block-title img {
-        width: 20%;
-    }
-
-    .block-nft-item .block-title img {
-        width: 65%;
-    }
-
-    .block-roadmap .block-title img,
-    .block-team .block-title img {
-        width: 20%;
     }
 
     .block-feature {
@@ -1519,10 +1625,6 @@ footer {
     .token-economy-img {
         max-width: 400px;
         margin: 0 20px;
-    }
-
-    .block-location .block-title {
-        top: -14px;
     }
 
     .feature-img {
@@ -1683,10 +1785,6 @@ footer {
         clip-path: polygon(0% 0%, 94% 0%, 100% 14%, 100% 100%, 0% 100%);
     }
 
-    .block-roadmap .block-title {
-        margin-bottom: 20px;
-    }
-
     .roadmap-list {
         flex-direction: column;
     }
@@ -1769,29 +1867,6 @@ footer {
 
     .block-vision .block-content {
         padding: 80px 50px 20px 60px;
-    }
-
-    .block-feature .block-title img,
-    .block-vision .block-title img,
-    .block-feature .block-title img,
-    .block-economy .block-title img,
-    .block-location .block-title img,
-    .block-about .block-title img,
-    .block-mechanism .block-title img {
-        width: 54%;
-    }
-
-    .block-gameplay .block-title img {
-        width: 50%;
-    }
-
-    .block-gameplay .block-title {
-        margin-bottom: 20px;
-    }
-
-    .block-mechanism .block-title {
-        padding-left: 0;
-        padding-top: 60px;
     }
 
     .block-mechanism {
@@ -1988,20 +2063,6 @@ footer {
         background-image: none;
     }
 
-    .block-feature .block-title img,
-    .block-vision .block-title img,
-    .block-feature .block-title img,
-    .block-economy .block-title img,
-    .block-location .block-title img,
-    .block-about .block-title img,
-    .block-mechanism .block-title img {
-        width: 70%;
-    }
-
-    .block-mechanism .block-title img {
-        width: 50%;
-    }
-
     .image-decor-2 {
         display: none;
     }
@@ -2014,7 +2075,6 @@ footer {
         padding: 10px;
     }
 
-    .block-about .block-title,
     .block-about .block-desc {
         padding-left: 0;
     }
@@ -2023,17 +2083,8 @@ footer {
         padding-top: 10px;
     }
 
-    .block-roadmap .block-title img,
-    .block-team .block-title img {
-        width: 35%;
-    }
-
     .roadmap-img img {
         object-fit: contain;
-    }
-
-    .block-location .block-title {
-        top: -20px;
     }
 
     .team-btn img {
@@ -2042,10 +2093,6 @@ footer {
 
     .team-btn {
         top: 40%;
-    }
-
-    .block-partner .block-title img {
-        width: 40%;
     }
 
     .parner-item {
@@ -2065,10 +2112,6 @@ footer {
 
     .menu {
         background-image: url(../img/nav-bg-mobile.png);
-    }
-
-    .block-partner .block-title {
-        margin-bottom: 40px;
     }
 
     .cloud2 {
@@ -2100,9 +2143,5 @@ footer {
 
     .footer-decor {
         width: 180px;
-    }
-
-    .block-location .block-title{
-        margin-bottom: 0;
     }
 }

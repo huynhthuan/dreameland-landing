@@ -1,7 +1,7 @@
 const swiper = new Swiper('.features-slide', {
     // Optional parameters
     loop: true,
-    slidesPerView: 3,
+    // slidesPerView: 'auto',
     spaceBetween: 24,
     // If we need pagination
     pagination: {
@@ -25,36 +25,18 @@ const swiper = new Swiper('.features-slide', {
         },
     },
     on: {
-        slideChange: function (swiper) {
-            $('.features-slide .swiper-slide').each((index, item) => {
-                if (window.innerWidth <= 1024) {
-                    $(item).css('right', '0');
-                } else if (window.innerWidth <= 1200) {
-                    switch (swiper.realIndex + 1) {
-                        case 1:
-                            $(item).css('right', '-31%');
-                            break;
-                        case 2:
-                            $(item).css('right', '-11%');
-                            break;
-                        case 3:
-                            $(item).css('right', '-21%');
-                            break;
-                    }
-                } else {
-                    switch (swiper.realIndex + 1) {
-                        case 1:
-                            $(item).css('right', '-30%');
-                            break;
-                        case 2:
-                            $(item).css('right', '-10%');
-                            break;
-                        case 3:
-                            $(item).css('right', '-20%');
-                            break;
-                    }
-                }
-            });
+        init: function () {},
+        beforeSlideChangeStart: function (swiper) {
+            $('.swiper-slide-active').addClass('active');
+            $('.swiper-slide-next').addClass('active');
+        },
+        beforeTransitionStart: function (swiper) {
+            $('.swiper-slide-active').removeClass('active');
+            $('.swiper-slide-next').removeClass('active');
+        },
+        slideChangeTransitionEnd: function (swiper) {
+            $('.swiper-slide-active').addClass('active');
+            $('.swiper-slide-next').addClass('active');
         },
     },
 });
@@ -96,6 +78,12 @@ const swiper2 = new Swiper('.slide-team-inner', {
     },
 });
 
+const swiperNft = new Swiper('.nft-item-swiper .swiper', {
+    slidesPerView: 1,
+    effect: 'cube',
+    allowTouchMove: false,
+});
+
 AOS.init({
     duration: 1000,
 });
@@ -120,16 +108,8 @@ $('.player-btn').click(() => {
     }
 });
 
-// let scene = document.getElementById('scene');
-// let parallaxInstance = new Parallax(scene, {
-//     relativeInput: true,
-// });
-
-// $(window).scroll(() => {
-//     console.log($(window).scrollTop());
-//     if ($(window).scrollTop() >= 800) {
-//         $('.layer').each((index, value) => {
-//             $(value).removeData('data-aos');
-//         });
-//     }
-// });
+$('.nft-item').click((e) => {
+    $(e.currentTarget).siblings().removeClass('active');
+    $(e.currentTarget).addClass('active');
+    swiperNft.slideTo($(e.currentTarget).data('slide'));
+});
