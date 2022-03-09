@@ -46,7 +46,10 @@ const swiper2 = new Swiper('.slide-team-inner', {
     loop: true,
     slidesPerView: 4,
     spaceBetween: 40,
-
+    pagination: {
+        clickable: true,
+        el: '.team-pagination',
+    },
     navigation: {
         nextEl: '.team-button-next',
         prevEl: '.team-button-prev',
@@ -70,9 +73,11 @@ const swiper2 = new Swiper('.slide-team-inner', {
         },
         768: {
             slidesPerView: 3,
+            centeredSlides: false,
         },
         0: {
             slidesPerView: 2,
+            centeredSlides: true,
             spaceBetween: 10,
         },
     },

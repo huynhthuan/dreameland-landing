@@ -48,7 +48,7 @@ main {
     overflow: hidden;
 }
 
-::-webkit-scrollbar {
+body::-webkit-scrollbar {
     display: none;
 }
 
@@ -969,11 +969,11 @@ main {
 .block-team {
     padding-bottom: 120px;
     position: relative;
-    background: #FFFCF0;
+    background: #fffcf0;
     padding-top: 80px;
 }
 
-.block-team .block-title{
+.block-team .block-title {
     margin-bottom: 48px;
 }
 
@@ -1067,7 +1067,7 @@ main {
     background-color: #99643a;
 }
 
-.block-partner .block-title{
+.block-partner .block-title {
     margin-bottom: 73px;
 }
 
@@ -1450,6 +1450,27 @@ footer {
 }
 
 @media (max-width: 1368px) {
+    .text-custom {
+        font-size: 30px;
+    }
+
+    .block-mechanism .block-title .text-custom {
+        min-height: 100px;
+    }
+
+    .mechanims-img2 {
+        left: 212px;
+        top: 141px;
+    }
+
+    .nft-item-img {
+        max-width: 560px;
+    }
+
+    .tokenomics-content{
+        margin-bottom: 0;
+    }
+
     .block-about .block-desc {
         line-height: 19px;
         padding-right: 0;
@@ -1785,50 +1806,8 @@ footer {
         clip-path: polygon(0% 0%, 94% 0%, 100% 14%, 100% 100%, 0% 100%);
     }
 
-    .roadmap-list {
-        flex-direction: column;
-    }
-
-    .roadmap-item {
-        max-width: 100%;
-        flex-direction: row;
-        min-height: unset;
-        margin-right: 0;
-        margin-bottom: 30px;
-    }
-
-    .roadmap-desc {
-        display: flex;
-        align-content: center;
-    }
-
-    .roadmap-title {
-        line-height: normal;
-        margin: 0;
-        display: flex;
-        align-items: center;
-        margin-right: 20px;
-    }
-
-    .roadmap-img {
-        min-height: unset;
-        min-width: 200px;
-        align-items: center;
-        justify-content: center;
-        margin-right: 20px;
-        margin-bottom: 0;
-    }
-
-    .roadmap-item .roadmap-img {
-        bottom: 0;
-    }
-
     .roadmap-line {
         display: none;
-    }
-
-    .roadmap-list {
-        padding-bottom: 40px;
     }
 
     .team-button-next {
@@ -1906,11 +1885,6 @@ footer {
 
     .location-content {
         padding: 0 20px 20px;
-    }
-
-    .block-roadmap {
-        padding-top: 40px;
-        background-size: cover;
     }
 
     footer {
@@ -2005,16 +1979,6 @@ footer {
         padding: 150px 0 80px;
     }
 
-    .roadmap-desc-list {
-        flex: 1;
-    }
-
-    .roadmap-img {
-        max-width: 70px;
-        min-width: unset;
-        width: 100%;
-    }
-
     .team-btn {
         width: 30px;
         height: 30px;
@@ -2061,6 +2025,8 @@ footer {
 
     .block-vision .block-content {
         background-image: none;
+        box-shadow: none;
+        padding-top: 0;
     }
 
     .image-decor-2 {
@@ -2081,10 +2047,6 @@ footer {
 
     .block-location {
         padding-top: 10px;
-    }
-
-    .roadmap-img img {
-        object-fit: contain;
     }
 
     .team-btn img {
@@ -2130,7 +2092,7 @@ footer {
 
     .banner-img img {
         position: relative;
-        right: -10px;
+        width: 100%;
     }
 
     .partner-decor {
@@ -2138,10 +2100,571 @@ footer {
     }
 
     .partner-decor img {
-        width: 100px;
+        width: 149px;
     }
 
     .footer-decor {
         width: 180px;
+    }
+
+    .block {
+        top: 0;
+    }
+
+    .banner-text {
+        max-width: 196px;
+        text-align: center;
+        margin: 0 auto;
+        font-size: 18px;
+        line-height: 22px;
+        margin-bottom: 8px;
+    }
+
+    .banner-content {
+        top: 67%;
+    }
+
+    .block-banner {
+        background-image: url(../img/banner-bg-mobile.png);
+        min-height: 480px;
+    }
+
+    .cloud-mb-1 {
+        left: 19px;
+        top: -21px;
+    }
+
+    .cloud-mb-2 {
+        left: 245px;
+        top: 57px;
+    }
+
+    .cloud-mb-3 {
+        left: -20px;
+        top: 204px;
+    }
+
+    .cloud-mb-4 {
+        left: -137px;
+        top: 311px;
+    }
+
+    .cloud-mb-5 {
+        left: 209px;
+        top: 342px;
+    }
+
+    .text-custom {
+        font-size: 32px;
+    }
+
+    .block-vision .block-title {
+        min-height: 90px;
+        margin-bottom: 29px;
+    }
+
+    .vision-header {
+        justify-content: center;
+    }
+
+    .vision-item-1 {
+        background-image: url(../img/vision-item-bg-1.png);
+    }
+
+    .vision-item-2 {
+        background-image: url(../img/vision-item-bg-2.png);
+    }
+
+    .vision-item-1,
+    .vision-item-2 {
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        background-position: center center;
+        position: relative;
+    }
+
+    .block-vision .block-content {
+        padding: 0;
+    }
+
+    .vision-meta {
+        padding: 18px 20px 26px;
+    }
+
+    .vision-header {
+        margin-bottom: 0;
+    }
+
+    .vision-header {
+        top: -4px;
+        position: relative;
+    }
+
+    .vision-decor-mb {
+        position: absolute;
+        right: -12px;
+        bottom: -48px;
+    }
+
+    .vision-decor-mb-2 {
+        position: absolute;
+        top: -15px;
+        left: 80px;
+    }
+
+    .vision-item {
+        margin-bottom: 40px;
+    }
+
+    .block-about .block-title {
+        padding-left: 0;
+    }
+
+    .block-about {
+        margin-top: 56px;
+    }
+
+    .block-about .text-custom * {
+        text-align: center;
+    }
+
+    .block-about .block-title .text-custom {
+        min-height: 90px;
+    }
+
+    .block-about .block-desc {
+        font-weight: normal;
+        font-size: 15px;
+        line-height: 24px;
+        margin-bottom: 32px;
+    }
+
+    .block-mechanism {
+        padding-top: 200px;
+        top: -146px;
+    }
+
+    .mechanims-img2 {
+        left: -20px;
+        right: unset;
+        top: 230px;
+    }
+
+    .block-mechanism .block-title {
+        min-height: 90px;
+        margin-bottom: 32px;
+        padding-left: 0;
+    }
+
+    .block-mechanism .block-title * {
+        text-align: center;
+    }
+
+    .mechanims-item-desc {
+        font-size: 15px;
+    }
+
+    .mechanims-item {
+        clip-path: polygon(0% 0%, 93% 0%, 100% 10%, 100% 100%, 0% 100%);
+    }
+
+    .mechanims-img {
+        bottom: -73px;
+        right: -35px;
+    }
+
+    .block-feature {
+        padding-top: 0;
+        top: -66px;
+    }
+
+    .features-slide {
+        padding-top: 0;
+    }
+
+    .block-feature .block-title {
+        margin-bottom: 20px;
+    }
+
+    .features-btn {
+        display: none;
+    }
+
+    .feature-img {
+        position: absolute;
+        right: -12px;
+    }
+
+    .features-item {
+        height: 226px;
+    }
+
+    .star-group {
+        display: none;
+    }
+
+    .feature-img {
+        top: 60px;
+    }
+
+    .features-meta {
+        padding-top: 24px;
+    }
+
+    .features-title {
+        text-align: center;
+    }
+
+    .features-desc {
+        max-width: 148px;
+    }
+
+    .features-item {
+        padding: 0 20px 40px;
+        clip-path: polygon(-50% -50%, 100% 0%, 100% 100%, 6% 100%, 0% 90%);
+    }
+
+    .features-6 .features-desc {
+        max-width: 188px;
+    }
+
+    .features-6 .feature-img {
+        width: 106px;
+        height: 160px;
+        right: 8px;
+    }
+
+    .features-pagination {
+        padding: 32px 0 35px;
+        justify-content: center;
+    }
+
+    .features-slide .features-1 .features-item {
+        background: url(../img/bg-features-item.png), linear-gradient(180deg, #e48950 0%, #a95827 100%);
+        background-repeat: no-repeat;
+        background-position: bottom center;
+        background-size: 100% auto;
+        background-blend-mode: luminosity;
+    }
+
+    .features-slide .features-2 .features-item {
+        background: url(../img/bg-features-item.png), linear-gradient(180deg, #b47645 15.49%, #845530 100%);
+        background-repeat: no-repeat;
+        background-position: bottom center;
+        background-size: 100% auto;
+        background-blend-mode: luminosity;
+    }
+
+    .features-slide .features-3 .features-item {
+        background: url(../img/bg-features-item.png), linear-gradient(180deg, #66ae6c 0%, #426c45 100%);
+        background-repeat: no-repeat;
+        background-position: bottom center;
+        background-size: 100% auto;
+        background-blend-mode: luminosity;
+    }
+
+    .features-slide .features-4 .features-item {
+        background: url(../img/bg-features-item.png), linear-gradient(180deg, #e48950 0%, #a95827 100%);
+        background-repeat: no-repeat;
+        background-position: bottom center;
+        background-size: 100% auto;
+        background-blend-mode: luminosity;
+    }
+
+    .features-slide .features-5 .features-item {
+        background: url(../img/bg-features-item.png), linear-gradient(180deg, #66ae6c 0%, #426c45 100%);
+        background-repeat: no-repeat;
+        background-position: bottom center;
+        background-size: 100% auto;
+        background-blend-mode: luminosity;
+    }
+
+    .features-slide .features-6 .features-item {
+        background: url(../img/bg-features-item.png), linear-gradient(180deg, #b47645 15.49%, #845530 100%);
+        background-repeat: no-repeat;
+        background-position: bottom center;
+        background-size: 100% auto;
+        background-blend-mode: luminosity;
+    }
+
+    .block-gameplay {
+        top: -66px;
+    }
+
+    .block-gameplay .block-title {
+        margin-bottom: 10px;
+    }
+
+    .block-gameplay .block-desc {
+        font-size: 15px;
+        line-height: 22px;
+    }
+
+    .gameplay-video {
+        max-width: 335px;
+        height: 218px;
+        bottom: -109px;
+    }
+
+    .block-gameplay {
+        min-height: 440px;
+    }
+
+    .block::before {
+        background-image: url(../img/topbar-mb.png);
+        height: 36.7px;
+    }
+
+    .player-btn {
+        width: 60px;
+        height: 60px;
+    }
+
+    .player-btn img {
+        width: 24.64px;
+        height: 27px;
+    }
+
+    .image-decor-1 {
+        top: -60px;
+    }
+
+    .block-nft-item {
+        padding: 94px 0 0;
+    }
+
+    .block-nft-item .block-title * {
+        text-align: center;
+    }
+
+    .nft-meta-wrap {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .block-nft-item .block-desc {
+        font-size: 15px;
+        line-height: 24px;
+        margin-bottom: 24px;
+    }
+
+    .nft-items {
+        margin-bottom: 24px;
+    }
+
+    .block-economy {
+        padding-top: 226px;
+        top: -158px;
+        padding-bottom: 64px;
+    }
+
+    .token-economy-img {
+        max-width: 340px;
+        margin: 0 auto;
+    }
+
+    .block-economy .block-title {
+        margin-bottom: 28px;
+    }
+
+    .token-economy-item {
+        padding: 40px 0 54px 48px;
+        clip-path: polygon(0% 0%, 84% 0%, 100% 11%, 100% 100%, 0% 100%);
+    }
+
+    .economy-left {
+        margin-bottom: 16px;
+    }
+
+    .token-economy-title {
+        margin-bottom: 20px;
+    }
+
+    .block-tokenomics {
+        top: -158px;
+        padding-top: 58px;
+    }
+
+    .tokenomics-content {
+        padding: 33px 0 0;
+        margin-bottom: 0;
+    }
+
+    .decor-tokenomics {
+        position: absolute;
+        top: -70px;
+        left: 0;
+        z-index: 4;
+    }
+
+    .block-location {
+        top: -158px;
+        padding-top: 100px;
+    }
+
+    .block-location .block-title {
+        margin-bottom: 15px;
+    }
+
+    .block-location .block-title .text-custom {
+        min-height: 100px;
+        top: 0;
+    }
+
+    .location-content {
+        padding: 0;
+        background-image: none;
+        border: none;
+    }
+
+    .block-location .text-custom {
+        max-width: 243px;
+        margin: 0 auto;
+    }
+
+    .location-table {
+        overflow-x: scroll;
+        padding-bottom: 32px;
+    }
+
+    .location-table img {
+        width: 738px;
+        height: 428px;
+    }
+
+    .block-roadmap {
+        top: -158px;
+        padding-top: 80px;
+        background-image: url(../img/roadmap-bg-mb.png);
+    }
+
+    .block-roadmap .block-title {
+        margin-bottom: 40px;
+    }
+
+    .roadmap-item {
+        max-width: unset;
+        width: 50%;
+        margin-right: 0;
+    }
+
+    .roadmap-list {
+        flex-wrap: wrap;
+        padding-bottom: 149px;
+    }
+
+    .roadmap-desc-list {
+        max-width: 140px;
+    }
+
+    .roadmap-line-mb {
+        position: absolute;
+        top: 0;
+        left: -12px;
+        right: -12px;
+    }
+
+    .roadmap-line-mb img {
+        width: 100%;
+    }
+
+    .roadmap-line-mb-1 {
+        top: 170px;
+    }
+
+    .roadmap-line-mb-2 {
+        top: 570px;
+    }
+
+    .roadmap-line-mb-3 {
+        top: 994px;
+    }
+
+    .roadmap-item-6 .roadmap-img {
+        bottom: -15px;
+    }
+
+    .block-team {
+        top: -158px;
+        padding-top: 70px;
+        padding-bottom: 0;
+    }
+
+    .team-btn {
+        display: none;
+    }
+
+    .team-pagination {
+        display: flex;
+        justify-content: center;
+        padding-top: 43px;
+        padding-bottom: 70px;
+    }
+
+    .team-pagination .swiper-pagination-bullet {
+        width: 12px;
+        height: 12px;
+        background-color: #837b60;
+    }
+
+    .team-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
+        background: linear-gradient(180deg, #f3a83f 0%, #d18d5f 100%);
+    }
+
+    .block-team .swiper-slide-active {
+        width: 242px !important;
+    }
+
+    .block-team .swiper-slide {
+        left: -25px;
+    }
+
+    .team-ava {
+        height: 200px;
+    }
+
+    .team-ava img {
+        height: 100%;
+    }
+
+    .team-item-wrap {
+        min-height: 412px;
+    }
+
+    .block-partner {
+        top: -158px;
+    }
+
+    .block-partner .block-title {
+        margin-bottom: 32px;
+    }
+
+    .row-partner1 .parner-item {
+        width: 100%;
+        max-width: 69px;
+        margin-bottom: 0;
+    }
+
+    .row-partner {
+        justify-content: space-between;
+    }
+
+    .row-partner {
+        margin-bottom: 18px;
+    }
+
+    .row-partner-mb {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .row-partner-mb .parner-item {
+        padding: 0 10px;
+    }
+
+    footer {
+        padding-top: 72px;
+        top: -158px;
+        margin-bottom: -158px;
     }
 }

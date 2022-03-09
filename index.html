@@ -53,7 +53,8 @@
     <main>
         <div class="block block-banner">
             <div class="banner-img">
-                <img src="./img/banner-img.png" alt="banner">
+                <img src="./img/banner-img.png" alt="banner" class="d-none d-md-block">
+                <img src="./img/banner-img-mobile.png" alt="banner" class="d-sm-none">
             </div>
 
             <div class="banner-content">
@@ -79,7 +80,7 @@
                 </div>
             </div>
 
-            <div class="cloud-group">
+            <div class="cloud-group d-none d-md-block">
                 <div id="scene">
                     <div class="layer" data-depth="0.3" data-aos="zoom-out" data-aos-duration="2000"
                         data-aos-mirror="true" data-aos-once="false">
@@ -127,6 +128,29 @@
                     </div>
                 </div>
             </div>
+
+            <div class="cloud-group-mobile d-md-none">
+                <div class="layer" data-depth="0.3" data-aos="zoom-out" data-aos-duration="2000" data-aos-mirror="true"
+                    data-aos-once="false">
+                    <img src="./img/cloud-mb-1.png" class="cloud cloud-mb-1" alt="cloud">
+                </div>
+                <div class="layer" data-depth="0.3" data-aos="zoom-out" data-aos-duration="2000" data-aos-mirror="true"
+                    data-aos-once="false">
+                    <img src="./img/cloud-mb-2.png" class="cloud cloud-mb-2" alt="cloud">
+                </div>
+                <div class="layer" data-depth="0.3" data-aos="zoom-out" data-aos-duration="2000" data-aos-mirror="true"
+                    data-aos-once="false">
+                    <img src="./img/cloud-mb-3.png" class="cloud cloud-mb-3" alt="cloud">
+                </div>
+                <div class="layer" data-depth="0.3" data-aos="zoom-out" data-aos-duration="2000" data-aos-mirror="true"
+                    data-aos-once="false">
+                    <img src="./img/cloud-mb-4.png" class="cloud cloud-mb-4" alt="cloud">
+                </div>
+                <div class="layer" data-depth="0.3" data-aos="zoom-out" data-aos-duration="2000" data-aos-mirror="true"
+                    data-aos-once="false">
+                    <img src="./img/cloud-mb-5.png" class="cloud cloud-mb-5" alt="cloud">
+                </div>
+            </div>
         </div>
 
         <div class="block block-vision" id="vision">
@@ -135,80 +159,158 @@
                     <div class="col-xl-10 col-lg-12 mx-auto">
                         <div class="block-content">
                             <div class="block-title" data-aos="fade-down">
-                                <div class="text-custom">
-                                    <div class="text-main">Vision and Mission</div>
-                                    <div class="text-middle">Vision and Mission</div>
-                                    <div class="text-back">Vision and Mission</div>
+                                <div class="d-none d-md-block">
+                                    <div class="text-custom">
+                                        <div class="text-main">Vision and Mission</div>
+                                        <div class="text-middle">Vision and Mission</div>
+                                        <div class="text-back">Vision and Mission</div>
+                                    </div>
+                                </div>
+
+                                <div class="d-md-none">
+                                    <div class="text-custom">
+                                        <div class="text-main">Vision <br> and Mission</div>
+                                        <div class="text-middle">Vision <br> and Mission</div>
+                                        <div class="text-back">Vision <br> and Mission</div>
+                                    </div>
                                 </div>
                             </div>
 
-                            <div class="vision-item" data-aos="fade-up">
-                                <div class="vision-header">
-                                    <div class="vision-icon">
-                                        <img src="./img/vision-icon.png" alt="vision-icon">
+                            <div class="vision-pc d-none d-md-block">
+                                <div class="vision-item" data-aos="fade-up">
+                                    <div class="vision-header">
+                                        <div class="vision-icon">
+                                            <img src="./img/vision-icon.png" alt="vision-icon">
+                                        </div>
+                                        <div class="vision-title">Vision</div>
                                     </div>
-                                    <div class="vision-title">Vision</div>
-                                </div>
 
-                                <div class="vision-meta">
-                                    <div class="vision-desc-item">
-                                        <div class="vision-desc-icon">
-                                            <img src="./img/star.png" alt="star">
-                                        </div>
-                                        <div class="vision-desc-content">
-                                            Với sự phát triển mạnh mẽ của thị trường Game NFT hiện nay. Chúng tôi tin
-                                            rằng
-                                            đây sẽ là mô hình kinh tế mạnh và bền vững trong 3 đến 5 năm tới.
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="vision-item" data-aos="fade-up">
-                                <div class="vision-header">
-                                    <div class="vision-icon">
-                                        <img src="./img/vision-icon.png" alt="vision-icon">
-                                    </div>
-                                    <div class="vision-title">Mission</div>
-                                </div>
-                                <div class="vision-meta">
-                                    <div class="vision-desc">
+                                    <div class="vision-meta">
                                         <div class="vision-desc-item">
                                             <div class="vision-desc-icon">
                                                 <img src="./img/star.png" alt="star">
                                             </div>
                                             <div class="vision-desc-content">
-                                                Cung cấp cho người chơi một nền tảng giải trí trong đó người chơi có thể
-                                                hưởng lợi khi tham gia và đầu tư vào các trò chơi với mô hình NFT Game.
-                                            </div>
-                                        </div>
-                                        <div class="vision-desc-item">
-                                            <div class="vision-desc-icon">
-                                                <img src="./img/star.png" alt="star">
-                                            </div>
-                                            <div class="vision-desc-content">
-                                                Hỗ trợ một lượng lớn người chơi trên thị trường Game truyền thống có thể
-                                                dễ dàng làm quen với Game NFT; để thúc đẩy sự phát triển của thị trường
-                                                Crypto nói chung và thị trường NFT Game nói riêng.
-                                            </div>
-                                        </div>
-                                        <div class="vision-desc-item">
-                                            <div class="vision-desc-icon">
-                                                <img src="./img/star.png" alt="star">
-                                            </div>
-                                            <div class="vision-desc-content">
-                                                Chúng tôi muốn sứ mệnh này thành công nên cần rất nhiều sự hợp tác giữa
-                                                các nhà đầu tư.
+                                                Với sự phát triển mạnh mẽ của thị trường Game NFT hiện nay. Chúng tôi
+                                                tin
+                                                rằng
+                                                đây sẽ là mô hình kinh tế mạnh và bền vững trong 3 đến 5 năm tới.
                                             </div>
                                         </div>
                                     </div>
                                 </div>
+
+                                <div class="vision-item" data-aos="fade-up">
+                                    <div class="vision-header">
+                                        <div class="vision-icon">
+                                            <img src="./img/vision-icon.png" alt="vision-icon">
+                                        </div>
+                                        <div class="vision-title">Mission</div>
+                                    </div>
+                                    <div class="vision-meta">
+                                        <div class="vision-desc">
+                                            <div class="vision-desc-item">
+                                                <div class="vision-desc-icon">
+                                                    <img src="./img/star.png" alt="star">
+                                                </div>
+                                                <div class="vision-desc-content">
+                                                    Cung cấp cho người chơi một nền tảng giải trí trong đó người chơi có
+                                                    thể
+                                                    hưởng lợi khi tham gia và đầu tư vào các trò chơi với mô hình NFT
+                                                    Game.
+                                                </div>
+                                            </div>
+                                            <div class="vision-desc-item">
+                                                <div class="vision-desc-icon">
+                                                    <img src="./img/star.png" alt="star">
+                                                </div>
+                                                <div class="vision-desc-content">
+                                                    Hỗ trợ một lượng lớn người chơi trên thị trường Game truyền thống có
+                                                    thể
+                                                    dễ dàng làm quen với Game NFT; để thúc đẩy sự phát triển của thị
+                                                    trường
+                                                    Crypto nói chung và thị trường NFT Game nói riêng.
+                                                </div>
+                                            </div>
+                                            <div class="vision-desc-item">
+                                                <div class="vision-desc-icon">
+                                                    <img src="./img/star.png" alt="star">
+                                                </div>
+                                                <div class="vision-desc-content">
+                                                    Chúng tôi muốn sứ mệnh này thành công nên cần rất nhiều sự hợp tác
+                                                    giữa
+                                                    các nhà đầu tư.
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="vision-decor vision-decor1" data-aos="fade-right">
+                                    <img src="./img/vision-decor1.png" alt="vision-decor1">
+                                </div>
+                                <div class="vision-decor vision-decor2" data-aos="fade-left">
+                                    <img src="./img/vision-decor2.png" alt="vision-decor2">
+                                </div>
                             </div>
 
-                            <div class="vision-decor vision-decor1" data-aos="fade-right">
-                                <img src="./img/vision-decor1.png" alt="vision-decor1">
-                            </div>
-                            <div class="vision-decor vision-decor2" data-aos="fade-left">
-                                <img src="./img/vision-decor2.png" alt="vision-decor2">
+                            <div class="vision-mb d-md-none">
+                                <div class="vision-item vision-item-1" data-aos="fade-up">
+                                    <div class="vision-header">
+                                        <div class="vision-title">Vision</div>
+                                    </div>
+                                    <div class="vision-meta">
+                                        <div class="vision-desc-item">
+                                            <div class="vision-desc-content">
+                                                Với sự phát triển mạnh mẽ của thị trường Game NFT hiện nay. Chúng tôi
+                                                tin
+                                                rằng
+                                                đây sẽ là mô hình kinh tế mạnh và bền vững trong 3 đến 5 năm tới.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="vision-item vision-item-2" data-aos="fade-up">
+                                    <div class="vision-decor-mb-2" data-aos="fade-left">
+                                        <img src="./img/vision-decor-mb-1.png" alt="vision-decor2">
+                                    </div>
+                                    <div class="vision-header">
+                                        <div class="vision-title">Mission</div>
+                                    </div>
+                                    <div class="vision-meta">
+                                        <div class="vision-desc">
+                                            <div class="vision-desc-item">
+                                                <div class="vision-desc-content">
+                                                    Cung cấp cho người chơi một nền tảng giải trí trong đó người chơi có
+                                                    thể
+                                                    hưởng lợi khi tham gia và đầu tư vào các trò chơi với mô hình NFT
+                                                    Game.
+                                                </div>
+                                            </div>
+                                            <div class="vision-desc-item">
+                                                <div class="vision-desc-content">
+                                                    Hỗ trợ một lượng lớn người chơi trên thị trường Game truyền thống có
+                                                    thể
+                                                    dễ dàng làm quen với Game NFT; để thúc đẩy sự phát triển của thị
+                                                    trường
+                                                    Crypto nói chung và thị trường NFT Game nói riêng.
+                                                </div>
+                                            </div>
+                                            <div class="vision-desc-item">
+                                                <div class="vision-desc-content">
+                                                    Chúng tôi muốn sứ mệnh này thành công nên cần rất nhiều sự hợp tác
+                                                    giữa
+                                                    các nhà đầu tư.
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="vision-decor-mb" data-aos="fade-left">
+                                    <img src="./img/vision-decor-mb-2.png" alt="vision-decor2">
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -219,12 +321,12 @@
         <div class="block block-about" id="about">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-6 offset-lg-1">
+                    <div class="col-lg-6 offset-lg-1 order-2 order-md-1">
                         <div class="about-img" data-aos="fade-right">
                             <img src="./img/about-img.png" alt="about-img">
                         </div>
                     </div>
-                    <div class="col-xl-4 col-lg-5">
+                    <div class="col-xl-4 col-lg-5  order-1 order-md-2">
                         <div class="block-title" data-aos="fade-left">
                             <div class="text-custom">
                                 <div class="text-main">About and <br> Dreameland</div>
@@ -574,17 +676,26 @@
                                         <div class="swiper-wrapper">
                                             <div class="swiper-slide">
                                                 <div class="nft-img">
-                                                    <img src="./img/nft-item-img-3.png" alt="nft-item-3">
+                                                    <img src="./img/nft-item-img-3.png" alt="nft-item-3"
+                                                        class="d-none d-md-block">
+                                                    <img src="./img/nft-item-img-mb-3.png" alt="nft-item-3"
+                                                        class="d-md-none">
                                                 </div>
                                             </div>
                                             <div class="swiper-slide">
                                                 <div class="nft-img">
-                                                    <img src="./img/nft-item-img-1.png" alt="nft-item-1">
+                                                    <img src="./img/nft-item-img-1.png" class="d-none d-md-block"
+                                                        alt="nft-item-1">
+                                                    <img src="./img/nft-item-img-mb-1.png" alt="nft-item-1"
+                                                        class="d-md-none">
                                                 </div>
                                             </div>
                                             <div class="swiper-slide">
                                                 <div class="nft-img">
-                                                    <img src="./img/nft-item-img-2.png" alt="nft-item-2">
+                                                    <img src="./img/nft-item-img-2.png" class="d-none d-md-block"
+                                                        alt="nft-item-2">
+                                                    <img src="./img/nft-item-img-mb-2.png" alt="nft-item-2"
+                                                        class="d-md-none">
                                                 </div>
                                             </div>
                                         </div>
@@ -609,7 +720,7 @@
                     </div>
 
                     <div class="token-economy-wrap">
-                        <div class="economy-left">
+                        <div class="economy-left  order-2 order-md-1">
                             <div class="token-economy-item" data-aos="fade-left">
                                 <div class="token-economy-title">
                                     Using
@@ -659,7 +770,7 @@
                             </div>
                         </div>
 
-                        <div class="economy-center">
+                        <div class="economy-center order-1 order-md-2">
                             <div class="token-economy-img" data-aos="zoom-out">
                                 <img src="./img/token-img.png" alt="token-img">
                             </div>
@@ -670,7 +781,7 @@
                             </div>
                         </div>
 
-                        <div class="economy-right">
+                        <div class="economy-right order-3 order-md-3">
                             <div class="token-economy-item mb-0" data-aos="fade-left">
                                 <div class="token-economy-title">
                                     Earn
@@ -727,11 +838,15 @@
                 </div>
 
                 <div class="tokenomics-content" data-aos="zoom-out">
-                    <img src="./img/tokenomics.png" alt="tokenomics">
+                    <img src="./img/tokenomics.png" class="d-none d-md-block" alt="tokenomics">
+                    <img src="./img/tokenomics-mb.png" class="d-md-none" alt="tokenomics">
                 </div>
             </div>
             <div class="tokenomics-decor" data-aos="fade-left">
                 <img src="./img/decor-tokenomics.png" alt="decor-tokenomics.">
+            </div>
+            <div class="decor-tokenomics" data-aos="fade-right">
+                <img src="./img/tokenomics-decor.png" alt="decor-allocation">
             </div>
         </div>
 
@@ -749,7 +864,8 @@
                             </div>
 
                             <div class="location-table" data-aos="zoom-out">
-                                <img src="./img/table-location.png" alt="table-location">
+                                <img src="./img/table-location.png" class="d-none d-md-block" alt="table-location">
+                                <img src="./img/table-location-mb.png" class="d-md-none" alt="table-location">
                             </div>
                         </div>
                     </div>
@@ -777,7 +893,7 @@
                             <div class="roadmap-line" data-aos="zoom-out">
                                 <img src="./img/r-line.png" alt="r-line">
                             </div>
-                            <ul class="roadmap-list" data-aos="zoom-out" data-aos-delay="500">
+                            <ul class="roadmap-list" data-aos="fade-right" data-aos-delay="500">
                                 <li class="roadmap-item roadmap-item-1">
                                     <div class="roadmap-img">
                                         <img src="./img/r1.png" alt="r1">
@@ -905,6 +1021,16 @@
                                     </div>
                                 </li>
                             </ul>
+
+                            <div class="roadmap-line-mb roadmap-line-mb-1 d-md-none" data-aos="fade-right">
+                                <img src="./img/r-line-mb-1.png" alt="r-line">
+                            </div>
+                            <div class="roadmap-line-mb roadmap-line-mb-2 d-md-none" data-aos="fade-right">
+                                <img src="./img/r-line-mb-2.png" alt="r-line">
+                            </div>
+                            <div class="roadmap-line-mb roadmap-line-mb-3 d-md-none" data-aos="fade-right">
+                                <img src="./img/r-line-mb-3.png" alt="r-line">
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -988,6 +1114,8 @@
                                         </div>
                                     </div>
                                 </div>
+
+                                <div class="team-pagination d-md-none"></div>
                             </div>
 
                             <div class="team-btn team-button-prev">
@@ -1027,35 +1155,68 @@
                                 <img src="./img/comming.png" alt="comming">
                             </div>
                         </div>
-                        <div class="row-partner" data-aos="fade-up">
-                            <div class="parner-item">
-                                <img src="./img/p1.png" alt="p-1">
+                        <div class="d-none d-md-block">
+                            <div class="row-partner" data-aos="fade-up">
+                                <div class="parner-item">
+                                    <img src="./img/p1.png" alt="p-1">
+                                </div>
+                                <div class="parner-item">
+                                    <img src="./img/p2.png" alt="p-2">
+                                </div>
+                                <div class="parner-item">
+                                    <img src="./img/p3.png" alt="p-3">
+                                </div>
+                                <div class="parner-item">
+                                    <img src="./img/p4.png" alt="p-4">
+                                </div>
+                                <div class="parner-item">
+                                    <img src="./img/p5.png" alt="p-5">
+                                </div>
                             </div>
-                            <div class="parner-item">
-                                <img src="./img/p2.png" alt="p-2">
-                            </div>
-                            <div class="parner-item">
-                                <img src="./img/p3.png" alt="p-3">
-                            </div>
-                            <div class="parner-item">
-                                <img src="./img/p4.png" alt="p-4">
-                            </div>
-                            <div class="parner-item">
-                                <img src="./img/p5.png" alt="p-5">
+                            <div class="row-partner" data-aos="fade-up">
+                                <div class="parner-item">
+                                    <img src="./img/p6.png" alt="p-6">
+                                </div>
+                                <div class="parner-item">
+                                    <img src="./img/p7.png" alt="p-7">
+                                </div>
+                                <div class="parner-item">
+                                    <img src="./img/p8.png" alt="p-8">
+                                </div>
+                                <div class="parner-item">
+                                    <img src="./img/p9.png" alt="p-9">
+                                </div>
                             </div>
                         </div>
-                        <div class="row-partner" data-aos="fade-up">
-                            <div class="parner-item">
-                                <img src="./img/p6.png" alt="p-6">
-                            </div>
-                            <div class="parner-item">
-                                <img src="./img/p7.png" alt="p-7">
-                            </div>
-                            <div class="parner-item">
-                                <img src="./img/p8.png" alt="p-8">
-                            </div>
-                            <div class="parner-item">
-                                <img src="./img/p9.png" alt="p-9">
+                        <div class="d-md-none">
+                            <div class="row-partner-mb" data-aos="fade-up">
+                                <div class="parner-item">
+                                    <img src="./img/p1.png" alt="p-1">
+                                </div>
+                                <div class="parner-item">
+                                    <img src="./img/p2.png" alt="p-2">
+                                </div>
+                                <div class="parner-item">
+                                    <img src="./img/p3.png" alt="p-3">
+                                </div>
+                                <div class="parner-item">
+                                    <img src="./img/p4.png" alt="p-4">
+                                </div>
+                                <div class="parner-item">
+                                    <img src="./img/p5.png" alt="p-5">
+                                </div>
+                                <div class="parner-item">
+                                    <img src="./img/p6.png" alt="p-6">
+                                </div>
+                                <div class="parner-item">
+                                    <img src="./img/p7.png" alt="p-7">
+                                </div>
+                                <div class="parner-item">
+                                    <img src="./img/p8.png" alt="p-8">
+                                </div>
+                                <div class="parner-item">
+                                    <img src="./img/p9.png" alt="p-9">
+                                </div>
                             </div>
                         </div>
                     </div>
