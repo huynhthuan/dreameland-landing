@@ -2141,7 +2141,8 @@ footer {
     }
 
     .banner-content {
-        top: 313px;
+        top: unset;
+        bottom: 18%;
     }
 
     .block-banner {
@@ -2732,5 +2733,27 @@ footer {
     .roadmap-list {
         top: -110px;
         position: relative;
+    }
+}
+
+@media (max-width: 425px) {
+    .banner-content {
+        top: unset;
+        bottom: 14%;
+    }
+}
+
+@media (max-width: 375px) {
+    .banner-content {
+        top: unset;
+        bottom: 24%;
+    }
+
+    .vision-decor-mb-2 {
+        left: 60px;
+    }
+
+    .gameplay-video {
+        bottom: -133px;
     }
 }
