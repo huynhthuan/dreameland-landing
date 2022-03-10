@@ -272,8 +272,8 @@ body::-webkit-scrollbar {
 
 .mechanims-img2 {
     position: absolute;
-    top: 166px;
-    left: 372px;
+    top: 151px;
+    left: 387px;
 }
 
 .mechanims-item-desc {
@@ -301,7 +301,7 @@ body::-webkit-scrollbar {
 }
 
 .block-feature .block-title {
-    margin-bottom: 80px;
+    margin-bottom: 50px;
 }
 
 .features-wrap {
@@ -311,7 +311,12 @@ body::-webkit-scrollbar {
 }
 
 .features-slide {
-    padding-top: 56px;
+    padding-top: 84px;
+}
+
+.feature-img .larger,
+.feature-img .mb {
+    display: none;
 }
 
 @media (min-width: 1025px) {
@@ -334,16 +339,22 @@ body::-webkit-scrollbar {
         text-align: center;
         position: relative;
         height: 284px;
-        padding-top: 170px;
         width: 100%;
         margin: 0 auto;
         clip-path: polygon(-50% -50%, 100% 0%, 100% 100%, 12% 100%, 0% 90%);
         transition: all 0.1s ease-in-out;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        padding-bottom: 32px;
     }
 
-    .features-slide .swiper-slide.swiper-slide-next + .swiper-slide .features-item {
-        clip-path: polygon(-50% -50%, 100% 0%, 100% 100%, 5% 100%, 0% 90%);
-        transition: all 0.1s ease-in-out;
+    .features-slide .swiper-slide.swiper-slide-next + .swiper-slide .features-item .mini {
+        display: none;
+    }
+
+    .features-slide .swiper-slide.swiper-slide-next + .swiper-slide .features-item .larger {
+        display: block;
     }
 
     .features-slide .swiper-slide.swiper-slide-next + .swiper-slide .features-desc {
@@ -352,23 +363,23 @@ body::-webkit-scrollbar {
     }
 
     .features-slide .swiper-slide.swiper-slide-next + .swiper-slide .feature-img {
-        top: -40px;
-        left: unset;
-        right: 41px;
-        max-width: 320px;
-        max-height: 280px;
-        width: 100%;
-        height: 100%;
-        object-fit: contain;
-        transform: translateX(0);
         transition: all 0.1s ease-in-out;
     }
 
     .features-slide .swiper-slide.swiper-slide-next + .swiper-slide .features-item {
         padding-top: 0;
         display: flex;
-        padding: 52px 41px 0;
+        padding: 52px 41px 43px;
         transition: all 0.1s ease-in-out;
+        width: 100%;
+        flex-direction: row-reverse;
+        align-items: flex-end;
+        clip-path: polygon(-50% -50%, 100% -50%, 100% 100%, 5% 100%, 0% 90%);
+        transition: all 0.1s ease-in-out;
+    }
+
+    .features-slide .swiper-slide.swiper-slide-next + .swiper-slide .features-item .feature-img {
+        bottom: 33px;
     }
 
     .features-slide .swiper-slide.swiper-slide-next + .swiper-slide .features-meta {
@@ -376,6 +387,10 @@ body::-webkit-scrollbar {
         max-width: 228px;
         flex: 1;
         transition: all 0.1s ease-in-out;
+        align-items: flex-start;
+        display: flex;
+        flex-direction: column;
+        height: 100%;
     }
 }
 
@@ -468,22 +483,10 @@ body::-webkit-scrollbar {
 }
 
 .feature-img {
-    max-width: 176px;
-    height: 199px;
     position: relative;
-    top: -56px;
+    bottom: 26px;
     margin: 0 auto;
-    position: absolute;
-    width: 100%;
-    object-fit: contain;
-    left: 50%;
-    transform: translateX(-50%);
-}
-
-.feature-img img {
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
+    text-align: center;
 }
 
 .features-title {
@@ -538,12 +541,14 @@ body::-webkit-scrollbar {
     background: linear-gradient(180deg, #7ec04a 0%, #6e9530 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    -webkit-box-decoration-break: clone;
 }
 
 .block-gameplay .block-title .text-back {
     background: linear-gradient(180deg, #7ec04a 0%, #6e9530 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    -webkit-box-decoration-break: clone;
 }
 
 .block-gameplay::before {
@@ -695,6 +700,7 @@ body::-webkit-scrollbar {
     background: linear-gradient(180deg, #f3a83f 0%, #d18d5f 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    -webkit-box-decoration-break: clone;
 }
 
 .nft-item-wrap {
@@ -1431,6 +1437,7 @@ footer {
     top: -2px;
     left: calc(50% - 1.5px);
     z-index: 2;
+    -webkit-box-decoration-break: clone;
 }
 
 .text-back {
@@ -1441,6 +1448,7 @@ footer {
     top: 2.5px;
     left: calc(50% + 3.5px);
     z-index: 1;
+    -webkit-box-decoration-break: clone;
 }
 
 @media (max-width: 1440px) {
@@ -1467,7 +1475,7 @@ footer {
         max-width: 560px;
     }
 
-    .tokenomics-content{
+    .tokenomics-content {
         margin-bottom: 0;
     }
 
@@ -2033,6 +2041,18 @@ footer {
         display: none;
     }
 
+    .image-decor-2-mb {
+        position: absolute;
+        top: -17px;
+        left: -24px;
+        width: 107px;
+        z-index: 2;
+    }
+
+    .image-decor-2-mb img {
+        width: 100%;
+    }
+
     .nft-item-wrap {
         flex-direction: column;
     }
@@ -2121,7 +2141,7 @@ footer {
     }
 
     .banner-content {
-        top: 67%;
+        top: 313px;
     }
 
     .block-banner {
@@ -2221,7 +2241,7 @@ footer {
     }
 
     .block-about {
-        margin-top: 56px;
+        padding-top: 48px;
     }
 
     .block-about .text-custom * {
@@ -2242,6 +2262,7 @@ footer {
     .block-mechanism {
         padding-top: 200px;
         top: -146px;
+        z-index: 1;
     }
 
     .mechanims-img2 {
@@ -2290,21 +2311,12 @@ footer {
         display: none;
     }
 
-    .feature-img {
-        position: absolute;
-        right: -12px;
-    }
-
     .features-item {
         height: 226px;
     }
 
     .star-group {
         display: none;
-    }
-
-    .feature-img {
-        top: 60px;
     }
 
     .features-meta {
@@ -2322,6 +2334,15 @@ footer {
     .features-item {
         padding: 0 20px 40px;
         clip-path: polygon(-50% -50%, 100% 0%, 100% 100%, 6% 100%, 0% 90%);
+        width: 100%;
+        position: relative;
+    }
+
+    .feature-img {
+        position: absolute;
+        bottom: 15px;
+        right: 10px;
+        height: auto;
     }
 
     .features-6 .features-desc {
@@ -2550,7 +2571,7 @@ footer {
 
     .roadmap-list {
         flex-wrap: wrap;
-        padding-bottom: 149px;
+        padding-bottom: 30px;
     }
 
     .roadmap-desc-list {
@@ -2569,15 +2590,15 @@ footer {
     }
 
     .roadmap-line-mb-1 {
-        top: 170px;
+        top: 60px;
     }
 
     .roadmap-line-mb-2 {
-        top: 570px;
+        top: 457px;
     }
 
     .roadmap-line-mb-3 {
-        top: 994px;
+        top: 884px;
     }
 
     .roadmap-item-6 .roadmap-img {
@@ -2666,5 +2687,50 @@ footer {
         padding-top: 72px;
         top: -158px;
         margin-bottom: -158px;
+    }
+
+    .feature-img .mini,
+    .feature-img .larger {
+        display: none;
+    }
+
+    .feature-img .mb {
+        display: block;
+    }
+
+    .block-about {
+        padding-bottom: 0;
+    }
+
+    .vision-item-2 {
+        margin-bottom: 48px;
+    }
+
+    body {
+        background-color: #fff;
+    }
+
+    .block-vision {
+        background: linear-gradient(180deg, rgba(254, 251, 239, 0) 0%, #fefbef 33.72%);
+        box-shadow: 4px 4px 20px rgba(68, 35, 5, 0.12);
+    }
+
+    .block-feature,
+    .block-nft-item {
+        background-color: #fff;
+    }
+
+    .block-tokenomics,
+    .block-location {
+        background-color: #fffcf0;
+    }
+
+    .block-roadmap {
+        overflow: hidden;
+    }
+
+    .roadmap-list {
+        top: -110px;
+        position: relative;
     }
 }
