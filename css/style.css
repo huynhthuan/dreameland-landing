@@ -1451,6 +1451,13 @@ footer {
     -webkit-box-decoration-break: clone;
 }
 
+.pink {
+    position: absolute !important;
+    max-width: 406px;
+    bottom: 262px;
+    width: 100%;
+}
+
 @media (max-width: 1440px) {
     .mechanims-img2 {
         left: 133px;
@@ -1933,6 +1940,13 @@ footer {
 }
 
 @media (max-width: 576px) {
+    .pink {
+        max-width: 250px;
+        bottom: 180px;
+        width: 100%;
+        z-index: 2;
+    }
+
     .tokenomics-decor img {
         display: none;
     }
