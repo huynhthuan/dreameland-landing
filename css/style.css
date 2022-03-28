@@ -219,7 +219,7 @@ body::-webkit-scrollbar {
 }
 
 .mechanims-item-title {
-    font-family: 'Bai Jamjuree';
+    font-family: 'Lithos Pro';
     font-style: normal;
     font-weight: bold;
     font-size: 20px;
@@ -250,11 +250,11 @@ body::-webkit-scrollbar {
 }
 
 .mechanims-item-title {
-    font-family: 'Cowboys 2.0';
+    font-family: 'Lithos Pro';
     font-style: normal;
-    font-weight: normal;
+    font-weight: 850;
     font-size: 20px;
-    line-height: 24px;
+    line-height: 26px;
     letter-spacing: 0.08em;
     text-transform: uppercase;
     color: #fcf6df;
@@ -530,7 +530,7 @@ body::-webkit-scrollbar {
     padding-top: 100px;
     position: relative;
     background-color: #49794d;
-    min-height: 670px;
+    min-height: 846px;
 }
 
 .block-gameplay .block-title {
@@ -650,13 +650,13 @@ body::-webkit-scrollbar {
 }
 
 .image-decor-2 {
-    top: 50%;
+    top: 35%;
     left: -20%;
 }
 
 .block-nft-item {
     position: relative;
-    padding-top: 377px;
+    padding-top: 484px;
     background-color: #fffcf0;
 }
 
@@ -1457,6 +1457,18 @@ footer {
     width: 100%;
 }
 
+.game-play-slider-wrap {
+    margin-top: 32px;
+}
+
+.game-play-img-swiper img {
+    width: 100%;
+}
+
+.game-play-img-swiper {
+    box-shadow: 4px 4px 20px rgba(68, 35, 5, 0.2);
+}
+
 @media (max-width: 1440px) {
     .mechanims-img2 {
         left: 133px;
@@ -1939,6 +1951,10 @@ footer {
 }
 
 @media (max-width: 576px) {
+    .game-play-slider-wrap {
+        display: none;
+    }
+    
     .pink {
         max-width: 250px;
         bottom: 180px;

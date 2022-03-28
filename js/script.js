@@ -83,6 +83,40 @@ const swiper2 = new Swiper('.slide-team-inner', {
     },
 });
 
+const swiper3 = new Swiper('.game-play-slider', {
+    // Optional parameters
+    loop: true,
+    slidesPerView: 3,
+    spaceBetween: 23,
+    breakpoints: {
+        1400: {
+            slidesPerView: 3,
+            spaceBetween: 40,
+        },
+        1368: {
+            slidesPerView: 3,
+            spaceBetween: 40,
+        },
+        1200: {
+            slidesPerView: 3,
+            spaceBetween: 40,
+        },
+        1024: {
+            slidesPerView: 2,
+            spaceBetween: 40,
+        },
+        768: {
+            slidesPerView: 2,
+            centeredSlides: false,
+        },
+        0: {
+            slidesPerView: 1,
+            centeredSlides: true,
+            spaceBetween: 10,
+        },
+    },
+});
+
 const swiperNft = new Swiper('.nft-item-swiper .swiper', {
     slidesPerView: 1,
     effect: 'cube',
