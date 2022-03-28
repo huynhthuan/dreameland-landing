@@ -1,0 +1,60 @@
+@font-face {
+    font-family: 'Lithos Pro';
+    src: url('LithosPro-ExtraLight.eot');
+    src: url('LithosPro-ExtraLight.eot?#iefix') format('embedded-opentype'),
+        url('LithosPro-ExtraLight.woff2') format('woff2'),
+        url('LithosPro-ExtraLight.woff') format('woff'),
+        url('LithosPro-ExtraLight.ttf') format('truetype');
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Lithos Pro';
+    src: url('LithosPro-Light.eot');
+    src: url('LithosPro-Light.eot?#iefix') format('embedded-opentype'),
+        url('LithosPro-Light.woff2') format('woff2'),
+        url('LithosPro-Light.woff') format('woff'),
+        url('LithosPro-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Lithos Pro';
+    src: url('LithosPro-Bold.eot');
+    src: url('LithosPro-Bold.eot?#iefix') format('embedded-opentype'),
+        url('LithosPro-Bold.woff2') format('woff2'),
+        url('LithosPro-Bold.woff') format('woff'),
+        url('LithosPro-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Lithos Pro';
+    src: url('LithosPro-Black.eot');
+    src: url('LithosPro-Black.eot?#iefix') format('embedded-opentype'),
+        url('LithosPro-Black.woff2') format('woff2'),
+        url('LithosPro-Black.woff') format('woff'),
+        url('LithosPro-Black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Lithos Pro';
+    src: url('LithosPro-Regular.eot');
+    src: url('LithosPro-Regular.eot?#iefix') format('embedded-opentype'),
+        url('LithosPro-Regular.woff2') format('woff2'),
+        url('LithosPro-Regular.woff') format('woff'),
+        url('LithosPro-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
